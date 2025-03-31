@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#f8f9fa" />
+  
+  <!-- 连接线 - 放在最底层 -->
+  <line x1="305" y1="205" x2="400" y2="300" stroke="#666666" stroke-width="3" />
+  <line x1="495" y1="205" x2="400" y2="300" stroke="#666666" stroke-width="3" />
+  <line x1="305" y1="395" x2="400" y2="300" stroke="#666666" stroke-width="3" />
+  <line x1="495" y1="395" x2="400" y2="300" stroke="#666666" stroke-width="3" />
+  
+  <!-- 中心圆 - 放在线条之上 -->
+  <circle cx="400" cy="300" r="120" fill="#2c7bb6" fill-opacity="0.7" />
+  <text x="400" y="300" font-family="Arial, sans-serif" font-size="24" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">医学AI研究</text>
+  
+  <!-- 四个方向 -->
+  <!-- 医学图像智能分析 -->
+  <circle cx="230" cy="150" r="100" fill="#d7301f" fill-opacity="0.7" />
+  <text x="230" y="135" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">医学图像智能分析</text>
+  <text x="230" y="160" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" width="180">利用深度神经网络自动识别</text>
+  <text x="230" y="175" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" width="180">和分类皮肤病变</text>
+  
+  <!-- 大模型构建与优化 -->
+  <circle cx="570" cy="150" r="100" fill="#1a9850" fill-opacity="0.7" />
+  <text x="570" y="135" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">大模型构建与优化</text>
+  <text x="570" y="160" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" width="180">基于海量数据训练高精度模型</text>
+  <text x="570" y="175" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" width="180">挖掘医学图像中潜在特征</text>
+  
+  <!-- 个性化治疗方案 -->
+  <circle cx="230" cy="450" r="100" fill="#fdae61" fill-opacity="0.7" />
+  <text x="230" y="435" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">个性化治疗方案</text>
+  <text x="230" y="460" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" width="180">结合临床数据与AI决策</text>
+  <text x="230" y="475" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" width="180">量身定制精准治疗策略</text>
+  
+  <!-- 跨学科合作 -->
+  <circle cx="570" cy="450" r="100" fill="#762a83" fill-opacity="0.7" />
+  <text x="570" y="435" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" font-weight="bold">跨学科合作</text>
+  <text x="570" y="460" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" width="180">整合医学、计算机科学</text>
+  <text x="570" y="475" font-family="Arial, sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" dominant-baseline="middle" width="180">和生物信息学</text>
+</svg>
