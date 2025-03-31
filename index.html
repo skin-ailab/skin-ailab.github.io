@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>智慧皮肤实验室</title>
+  <!-- Google Fonts -->
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.loli.net">
+  <link rel="preconnect" href="https://gstatic.loli.net" crossorigin>
+  <link href="https://fonts.loli.net/css2?family=Merriweather:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset & basic styles */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Source Sans Pro', sans-serif; background: #f9f9f9; color: #333; line-height: 1.7; }
+    a { text-decoration: none; color: inherit; }
+    
+    /* Header */
+    header { 
+      background: linear-gradient(135deg, #0d47a1, #1976d2);
+      color: #fff; 
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 { font-family: 'Merriweather', serif; font-size: 2.8em; margin-bottom: 10px; }
+    header p { font-size: 1.2em; }
+    
+    /* Navigation */
+    nav { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    nav ul { display: flex; justify-content: center; flex-wrap: wrap; list-style: none; }
+    nav li { margin: 0 15px; }
+    nav a { padding: 15px 0; display: block; font-weight: 600; color: #0d47a1; transition: color 0.3s; }
+    nav a:hover { color: #1976d2; }
+
+    
+    /* Section styles */
+    section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
+    section h2 { font-family: 'Merriweather', serif; font-size: 2em; color: #0d47a1; margin-bottom: 20px; border-bottom: 2px solid #1976d2; display: inline-block; padding-bottom: 5px; }
+    
+    /* 研究介绍与方向 */
+    .intro, .research-directions { display: flex; flex-wrap: wrap; align-items: center; margin-bottom: 40px; }
+    .intro img, .research-directions img {
+      max-width: 100%; 
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .intro .text, .research-directions .text { flex: 1; padding: 0 20px; }
+    .intro img, .research-directions img { flex: 0 0 300px; }
+    
+    /* 课题成员 */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .team-member {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .team-member img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 4px solid #1976d2;
+    }
+    .team-member h3 { margin-bottom: 10px; color: #0d47a1; }
+    .team-member p { font-size: 0.95em; }
+    
+    /* 近期论文 */
+    .publications .pub-item {
+      background: #fff;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-left: 4px solid #1976d2;
+      border-radius: 4px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .publications .pub-item h3 { margin-bottom: 10px; font-size: 1.3em; color: #0d47a1; }
+    .publications .pub-item p { margin-bottom: 5px; }
+    
+    /* 联系方式 */
+    .contact ul { list-style: none; }
+    .contact li { margin-bottom: 10px; font-size: 1.1em; }
+    
+    /* Footer */
+    footer {
+      background: #0d47a1;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .intro, .research-directions { flex-direction: column; text-align: center; }
+      .intro img, .research-directions img { margin: 0 auto 20px; }
+      .intro .text, .research-directions .text { padding: 0; }
+    }
+    .text li {
+  line-height: 1.8; /* 增加行间距，改善可读性 */
+  margin-bottom: 15px; /* 每段文字的下方增加间距 */
+}
+
+.research-directions {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* 调整间距，可根据需要修改 */
+}
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>武汉儿童医院-智慧皮肤人工智能实验室</h1>
+    <p>探索医学前沿，构建智能精准诊断体系</p>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="#introduction">研究介绍</a></li>
+      <li><a href="#directions">研究方向</a></li>
+      <li><a href="#team">课题组成员</a></li>
+      <li><a href="#publications">近期论文</a></li>
+      <li><a href="#contact">联系方式</a></li>
+    </ul>
+  </nav>
+  
+  <section id="introduction">
+    <h2>研究介绍</h2>
+    <div class="intro">
+        <img src="imgs/fig1.png" width="200" height="200" alt="皮肤疾病研究">
+        <div class="text">
+            <p>本课题组聚焦皮肤疾病的病理机制及其智能诊断技术，借助深度学习、计算机视觉与大数据分析，构建一套高效、智能化的皮肤病检测系统。</p>
+
+            <p>在临床实践中，皮肤病的类型繁多，诊断往往依赖于医生的经验。然而，人工智能（AI）驱动的大模型能够从大量医学影像中学习复杂特征，提供更精确的自动化分析方案，突破传统医学检测的瓶颈，提升早期筛查和个性化治疗的能力。</p>
+            
+            <p>我们正在开发“皮肤诊疗大模型”，该模型整合了多模态数据（包括临床图像），通过思维链和强化学习技术，构建高效、可泛化的医学大模型。</p>
+
+            <p>依托多学科交叉优势，我们不断推动人工智能在医学领域的应用，从医学图像处理到大模型构建，力求在皮肤病早期预警、精准治疗等方面取得重大突破。</p>
+        </div>
+    </div>
+</section>
+
+  
+  <section id="directions">
+    <h2>研究方向</h2>
+    <div class="research-directions">
+      <img src="imgs/fig2.svg" width="300" height="300" alt="人工智能医学应用">
+      <div class="text">
+        <ul>
+          <li><strong>  医学图像智能分析：</strong>利用深度神经网络自动识别和分类皮肤病变，提升诊断准确性。</li>
+          <li><strong>  大模型构建与优化：</strong>基于海量数据训练高精度模型，挖掘医学图像中潜在的病理特征。</li>
+          <li><strong>  个性化治疗方案：</strong>结合临床数据与人工智能决策，量身定制精准治疗策略。</li>
+          <li><strong>  跨学科合作：</strong>整合医学、计算机科学和生物信息学，构建前沿研究平台。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <section id="team">
+    <h2>课题成员</h2>
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="imgs/fig3.jpeg" alt="曾子璐">
+        <h3>曾子璐</h3>
+        <p>毕业于华中科技大学同济医学院协和医院，武汉儿童医院皮肤科医师，长期从事皮肤疾病和智能诊断研究，具有丰富的临床经验和科研成果。</p>
+      </div>
+      <div class="team-member">
+        <img src="img/fig4.jpg" alt="李博士">
+        <h3>王雷</h3>
+        <p>华中科技大学生物信息博士，计算机博士后，擅长大模型架构设计与优化，主导项目核心算法研发。</p>
+      </div>
+      <div class="team-member">
+        <img src="img/fig5.png" alt="王研究员">
+        <h3>猫怂怂</h3>
+        <p>英短蓝猫，专注睡觉，专注吃饭，专注玩。</p>
+      </div>
+      <!-- 可根据需要继续添加更多成员 -->
+    </div>
+  </section>
+  
+  <section id="publications">
+    <h2>近期论文</h2>
+    <div class="publications">
+      <div class="pub-item">
+        <h3>DeepNeuropePred: a robust and universal tool to predict cleavage sites from neuropeptide precursors by protein language model</h3>
+        <p><strong>期刊：</strong>Computational and Structural Biotechnology Journal</p>
+        <p>利用蛋白质语言模型预测神经肽前体切割位点，为神经肽的结构和功能研究提供了一种新的工具。</p>
+      </div>
+      <div class="pub-item">
+        <h3>A new frameshift mutation in a patient with neurofibromatosis type I</h3>
+        <p><strong>期刊：</strong>European Journal of Dermatology </p>
+        <p>报道了一例神经纤维瘤病I型患者的新型移码突变，为该疾病的遗传学研究提供了新的线索。</p>
+      </div>
+      <div class="pub-item">
+        <h3>Evaluating Large Language Models for Rare Pediatric Skin Disease Diagnosis: A Multi-Stage Assessment</h3>
+        <p><strong>期刊：</strong>Journal of the American Academy of Dermatology</p>
+        <p>构建智能决策系统，通过多维数据融合，为皮肤疾病的个性化治疗提供科学依据。</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact">
+    <h2>联系方式</h2>
+    <div class="contact">
+      <p>如需了解更多信息或合作洽谈，请通过以下方式与我们联系：</p>
+      <ul>
+        <li><strong>邮箱：</strong>wanglei94@hust.edu.cn</li>
+        <!-- <li><strong>电话：</strong>+86 123 4567 8901</li> -->
+        <li><strong>地址：</strong>华中科技大学恩明楼814</li>
+      </ul>
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 皮肤疾病与人工智能大模型研究组. 保留所有权利.</p>
+  </footer>
+</body>
+</html>
